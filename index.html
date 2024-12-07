@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box; 
+        }
+
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9; 
+        }
+
+        .header {
+            background-color: #66bb6a; 
+            color: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+        }
+
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            padding: 15px;
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+
+        .menu {
+            background-color: #81c784; 
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu li {
+            padding: 10px;
+            margin-bottom: 8px;
+            background-color: #a5d6a7; 
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            transition: background-color 0.3s ease; 
+        }
+
+        .menu li:hover {
+            background-color: #388e3c;
+        }
+
+        .main {
+            background-color: white; 
+            padding: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        }
+
+        .aside {
+            background-color: #81c784; 
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer styling */
+        .footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #66bb6a;
+            color: white;
+            border-radius: 8px; 
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .footer p {
+            margin: 0;
+            padding: 10px;
+        }
+
+        .responsive-img {
+            width: 100%;
+            height: auto;
+            max-width: 500px;
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s; 
+        }
+
+        .responsive-img:active {
+            transform: scale(0.95); 
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); 
+        }
+
+        .aside img {
+            max-width: 100%;
+            height: auto; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+            transition: transform 0.2s, box-shadow 0.2s; 
+        }
+
+        @media (max-width: 768px) {
+            .footer, .header {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer, .header {
+                padding: 8px;
+            }
+        }
+
+        @media only screen and (min-width: 700px) {
+            .container {
+                grid-template-columns: 1fr 2fr 1fr;
+            }
+
+            .responsive-img {
+                max-width: 680px;
+                display: block;
+                margin: 0 auto; 
+            }
+        }
+    </style>
+    <title>My Responsive Website</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to My Website!</h1>
+    </div>
+
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+                <li><a href="about.html" style="color: white; text-decoration: none;">About Me</a></li>
+                <li><a href="portofolio.html" style="color: white; text-decoration: none;">My Portofolio</a></li>
+                <li><a href="registration.html" style="color: white; text-decoration: none;">Registration Form</a></li>
+                <li><a href="calculator.html" style="color: white; text-decoration: none;">Simple Calculator</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <center><h1>Hello!</h1></center>
+            <center><img src="WhatsApp Image 2024-10-19 at 18.57.41_aafd7036.jpg" alt="An image I think" class="responsive-img"></center>
+            <p>
+                Hello, I am Miracle Shui. I'm from Sumatra. <br>
+                This is my personal website.<br>
+            </p>
+        </div>
+
+        <div class="aside">
+            <h2>Another Part of Me:)</h2>
+            <img src="kucing.jpeg" alt="Cat Image">
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; Miracle Shui Angela Situmorang. All rights reserved.</p>
+    </div>
+</body>
+</html>
